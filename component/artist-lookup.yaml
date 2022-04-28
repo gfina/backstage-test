@@ -8,7 +8,7 @@ metadata:
     code.aws.com/deploy-group-name: hello-world-group
     code.aws.com/pipeline-name: Hello-world-pipeline
     code.aws.com/iam-role: arn:aws:iam::837159043666:role/MyRole  
-name: nk-artist-lookup
+  name: nk-artist-lookup
   description: Artist Lookup
   tags:
     - java
