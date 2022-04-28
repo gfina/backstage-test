@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
+    jenkins.io/github-folder: nimak-org/backstage-test/main
     code.aws.com/region: us-west-2
     code.aws.com/build-project: hello-world
     code.aws.com/deploy-application: hello-world
@@ -41,4 +42,3 @@ spec:
   owner: team-a
   system: artist-engagement-portal
   dependsOn: ['resource:artists-db']
-  
