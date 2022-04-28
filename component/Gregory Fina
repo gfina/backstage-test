@@ -1,0 +1,44 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    code.aws.com/region: us-west-2
+    code.aws.com/build-project: hello-world
+    code.aws.com/deploy-application: hello-world
+    code.aws.com/deploy-group-name: hello-world-group
+    code.aws.com/pipeline-name: Hello-world-pipeline
+    code.aws.com/iam-role: arn:aws:iam::837159043666:role/MyRole  
+name: nk-artist-lookup
+  description: Artist Lookup
+  tags:
+    - java
+    - data
+  links:
+    - url: https://example.com/user
+      title: Examples Users
+      icon: user
+    - url: https://example.com/group
+      title: Example Group
+      icon: group
+    - url: https://example.com/cloud
+      title: Link with Cloud Icon
+      icon: cloud
+    - url: https://example.com/dashboard
+      title: Dashboard
+      icon: dashboard
+    - url: https://example.com/help
+      title: Support
+      icon: help
+    - url: https://example.com/web
+      title: Website
+      icon: web
+    - url: https://example.com/alert
+      title: Alerts
+      icon: alert
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
+  system: artist-engagement-portal
+  dependsOn: ['resource:artists-db']
+  
